@@ -10,7 +10,7 @@ export function HeroSection() {
           <h1 className="text-4xl font-semibold leading-tight text-[#3b352d] md:text-5xl">
             GO FRAME ACADEMY
           </h1>
-          <h2 className="text-xl leading-relaxed text-[#5a5349]">
+          <h2 className="text-xl leading-relaxed text-[#5a5349] text-center">
             สถาบันสอนหมากล้อม (โกะ)
             <br /> 
             ที่ปลูกฝังสติ สมดุล และปัญญา ผ่านหมากล้อมเพียงกระดานเดียว
