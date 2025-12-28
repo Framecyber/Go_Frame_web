@@ -25,18 +25,18 @@ export function ShopPage() {
 
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {[
-                  { slug: "9x9", title: "9x9", img: "/9x9_online.jpg" },
-                  { slug: "13x13", title: "13x13", img: "/13x13_online.jpg" },
-                  { slug: "8-kyu", title: "8 kyu", img: "/8_online.jpg" },
-                  { slug: "7-kyu", title: "7 kyu", img: "/7_online.jpg" },
-                  { slug: "6-kyu", title: "6 kyu", img: "/6_online.jpg" },
-                  { slug: "5-kyu", title: "5 kyu", img: "/5_online.jpg" },
-                  { slug: "4-kyu", title: "4 kyu", img: "/4_online.jpg" },
-                  { slug: "3-kyu", title: "3 kyu", img: "/3_online.jpg" },
-                  { slug: "2-kyu", title: "2 kyu", img: "/2_online.jpg" },
-                  { slug: "1-kyu", title: "1 kyu", img: "/1_online.jpg" },
-                  { slug: "1-dan", title: "1 dan", img: "/1d_online.jpg" },
-                  { slug: "mixed", title: "all kyu/dan", img: "/all_dan.jpg" },
+                  { slug: "9x9", title: "9x9", img: "9x9_online.jpg" },
+                  { slug: "13x13", title: "13x13", img: "13x13_online.jpg" },
+                  { slug: "8-kyu", title: "8 kyu", img: "8_online.jpg" },
+                  { slug: "7-kyu", title: "7 kyu", img: "7_online.jpg" },
+                  { slug: "6-kyu", title: "6 kyu", img: "6_online.jpg" },
+                  { slug: "5-kyu", title: "5 kyu", img: "5_online.jpg" },
+                  { slug: "4-kyu", title: "4 kyu", img: "4_online.jpg" },
+                  { slug: "3-kyu", title: "3 kyu", img: "3_online.jpg" },
+                  { slug: "2-kyu", title: "2 kyu", img: "2_online.jpg" },
+                  { slug: "1-kyu", title: "1 kyu", img: "1_online.jpg" },
+                  { slug: "1-dan", title: "1 dan", img: "1d_online.jpg" },
+                  { slug: "mixed", title: "all kyu/dan", img: "all_dan.jpg" },
                 ].map((c) => (
                   <CourseCard key={c.slug} title={c.title} subtitle={`หลักสูตร ${c.title}`} price={c.slug === "mixed" ? "5,999 บาท" : "999 บาท"} to={`/courses/${c.slug}`}>
                   <div className="h-36 w-full bg-[#f3efe8] overflow-hidden">

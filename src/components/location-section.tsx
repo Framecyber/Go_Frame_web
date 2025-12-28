@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { getImageUrl } from "@/utils/getImageUrl"
 
 export function LocationSection() {
   return (
@@ -39,7 +40,7 @@ export function LocationSection() {
           {/* Phone */}
           <div className="flex items-center gap-4">
             <img
-              src="/phone.png"
+              src={getImageUrl("phone.png")}
               alt="phone icon"
               className="h-[120px] w-[120px] object-cover"
             />
@@ -49,7 +50,7 @@ export function LocationSection() {
           {/* LINE */}
           <div className="flex items-center gap-4">
             <img
-              src="/line.png"
+              src={getImageUrl("line.png")}
               alt="line icon"
               className="h-[120px] w-[120px] object-cover"
             />
@@ -59,7 +60,7 @@ export function LocationSection() {
           {/* Website */}
           <div className="flex items-center gap-4">
             <img
-              src="/www.png"
+              src={getImageUrl("www.png")}
               alt="website icon"
               className="h-[120px] w-[120px] object-cover"
             />
@@ -69,7 +70,7 @@ export function LocationSection() {
           {/* Facebook */}
           <div className="flex items-center gap-4">
             <img
-              src="/facebook.png"
+              src={getImageUrl("facebook.png")}
               alt="facebook icon"
               className="h-[120px] w-[120px] object-cover"
             />
@@ -79,7 +80,7 @@ export function LocationSection() {
           {/* TikTok */}
           <div className="flex items-center gap-4">
             <img
-              src="/tiktok.png"
+              src={getImageUrl("tiktok.png")}
               alt="tiktok icon"
               className="h-[120px] w-[120px] object-cover"
             />

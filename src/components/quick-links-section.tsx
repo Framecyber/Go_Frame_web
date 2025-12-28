@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { getImageUrl } from "@/utils/getImageUrl"
 
 // QuickLinksSection.tsx
 
@@ -6,17 +7,17 @@ import { Link } from "react-router-dom"
 const CIRCLE_SIZE = "h-28 w-28"
 
 const links = [
-  { label: "หน้าหลัก", img: "/academy.png", to: "/about/history" },
-  { label: "เกี่ยวกับเรา", img: "/about-us.png", to: "/about/history" },
-  { label: "หลักสูตร/ราคา", img: "/lecture.png", to: "/courses" },
+  { label: "หน้าหลัก", img: getImageUrl("academy.png"), to: "/about/history" },
+  { label: "เกี่ยวกับเรา", img: getImageUrl("about-us.png"), to: "/about/history" },
+  { label: "หลักสูตร/ราคา", img: getImageUrl("lecture.png"), to: "/courses" },
 
   // 👇 ไอคอนเล็กเฉพาะ 2 อันนี้
-  { label: "ควบคุมการสอน", img: "/teach3.png", to: "/about/teaching", small: true },
-  { label: "ร้านค้า", img: "/shop_.png", to: "/shop", small: true },
+  { label: "ควบคุมการสอน", img: getImageUrl("teach3.png"), to: "/about/teaching", small: true },
+  { label: "ร้านค้า", img: getImageUrl("shop_.png"), to: "/shop", small: true },
 
-  { label: "บทความ", img: "/art.png", to: "/activities" },
-  { label: "ติดต่อเรา", img: "/contact_.png", to: "/contact" },
-  { label: "สมัครเรียน", img: "/enroollll.png", to: "/contact" },
+  { label: "บทความ", img: getImageUrl("art.png"), to: "/activities" },
+  { label: "ติดต่อเรา", img: getImageUrl("contact_.png"), to: "/contact" },
+  { label: "สมัครเรียน", img: getImageUrl("enroollll.png"), to: "/contact" },
 ]
 
 export function QuickLinksSection() {

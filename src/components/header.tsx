@@ -9,7 +9,7 @@ export function Header() {
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-3 text-[#3c372f]">
           <div className="flex h-11 w-11 items-center justify-center rounded-lg">
-            <img src="/logo.png" alt="GO FRAME ACADEMY" className="h-25 w-25 object-contain" />
+            <img src="/Go_Frame_web/logo.png" alt="GO FRAME ACADEMY" className="h-25 w-25 object-contain" />
           </div>
           <span className="text-xl font-black tracking-tight">
             GO FRAME ACADEMY

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Phone, MapPin } from "lucide-react"
 import { LocationSection } from "@/components/location-section"
+import { getImageUrl } from "@/utils/getImageUrl"
 
 export function ContactPage() {
   return (
@@ -46,7 +47,7 @@ export function ContactPage() {
                     </div>
                     <div className="w-40 h-40 bg-gray-100 rounded-lg overflow-hidden flex-shrink-0">
                       <img 
-                        src="/line_oa.jpg" 
+                        src={getImageUrl("line_oa.jpg")}
                         alt="Line QR Code" 
                         className="w-full h-full object-cover"
                       />
@@ -69,7 +70,7 @@ export function ContactPage() {
               
               <div className="relative">
                 <img
-                  src="/contact_pages.jpg"
+                  src={getImageUrl("contact_pages.jpg")}
                   alt="ครูและนักเรียนเล่นหมากล้อม"
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -163,4 +164,3 @@ export function ContactPage() {
     </div>
   )
 }
-

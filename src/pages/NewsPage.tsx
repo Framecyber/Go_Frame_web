@@ -4,6 +4,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
+import { getImageUrl } from "@/utils/getImageUrl"
 
 export function NewsPage() {
   const [activeFilter, setActiveFilter] = useState("all")
@@ -21,7 +22,7 @@ export function NewsPage() {
       title: "พื้นฐานการวางหิน สำหรับผู้เริ่มต้น",
       description: "เรียนรู้วิธีวางหินที่ถูกต้อง เข้าใจพื้นฐานของเกม",
       date: "วันที่: 12 มิถุนายน 2567",
-      image: "/children-playing-go.png",
+      image: getImageUrl("children-playing-go.png"),
       category: "พื้นฐานหมากล้อม",
     },
     {
@@ -29,7 +30,7 @@ export function NewsPage() {
       title: "หมากล้อมและการพัฒนาการ สมองในเด็กอย่างไร",
       description: "เน้นการสังเกต การแก้ปัญหา และการคิดเชิงกลยุทธ์",
       date: "วันที่: 28 มิถุนายน 2567",
-      image: "/asian-teacher-and-young-student-playing-go-baduk-t.jpg",
+      image: getImageUrl("asian-teacher-and-young-student-playing-go-baduk-t.jpg"),
       category: "หมากล้อมและการพัฒนาการเด็ก",
     },
   ]
@@ -37,22 +38,22 @@ export function NewsPage() {
   const galleryImages = [
     {
       id: 1,
-      image: "/children-playing-go.png",
+      image: getImageUrl("children-playing-go.png"),
       caption: "ห้องเรียน",
     },
     {
       id: 2,
-      image: "/intermediate-go.png",
+      image: getImageUrl("intermediate-go.png"),
       caption: "กิจกรรมพิเศษ",
     },
     {
       id: 3,
-      image: "/advanced-go.png",
+      image: getImageUrl("advanced-go.png"),
       caption: "ค่าย / Workshop",
     },
     {
       id: 4,
-      image: "/children-playing-go.png",
+      image: getImageUrl("children-playing-go.png"),
       caption: "ค่าย / Workshop",
     },
   ]
@@ -87,7 +88,7 @@ export function NewsPage() {
               </div>
               <div className="relative">
                 <img
-                  src="/go-books-stones.png"
+                  src={getImageUrl("go-books-stones.png")}
                   alt="หมากล้อมและหนังสือ"
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -164,7 +165,7 @@ export function NewsPage() {
               </div>
               <div className="relative">
                 <img
-                  src="/asian-teacher-and-young-student-playing-go-baduk-t.jpg"
+                  src={getImageUrl("asian-teacher-and-young-student-playing-go-baduk-t.jpg")}
                   alt="กิจกรรมการเรียนหมากล้อม"
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -235,4 +236,3 @@ export function NewsPage() {
     </div>
   )
 }
-

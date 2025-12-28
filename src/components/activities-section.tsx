@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { getImageUrl } from "@/utils/getImageUrl"
 
 export function ActivitiesSection() {
   return (
@@ -22,7 +23,7 @@ export function ActivitiesSection() {
         </div>
         <div className="overflow-hidden rounded-lg border border-[#e1d9cf] bg-white shadow-md">
           <img
-            src="/teach2.png"
+            src={getImageUrl("teach2.png")}
             alt="เด็กๆ เรียนหมากล้อมร่วมกัน"
             className="h-full w-full object-cover"
           />
@@ -31,4 +32,3 @@ export function ActivitiesSection() {
     </section>
   )
 }
-

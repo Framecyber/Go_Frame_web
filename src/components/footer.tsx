@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { MapPin, MessageCircle, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { getImageUrl } from "@/utils/getImageUrl"
 
 export function Footer() {
   return (
@@ -9,7 +10,7 @@ export function Footer() {
         <div className="flex flex-col items-start gap-4 text-[#3f3a32] sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-md">
-              <img src="/logo.png" alt="GO FRAME ACADEMY" className="h-25 w-25 object-contain" />
+              <img src={getImageUrl("logo.png")} alt="GO FRAME ACADEMY" className="h-25 w-25 object-contain" />
             </div>
             <span className="text-base font-semibold tracking-tight">GO FRAME ACADEMY</span>
           </div>

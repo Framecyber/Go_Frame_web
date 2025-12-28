@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import PageTemplate from "@/components/page-template"
+import { getImageUrl } from "@/utils/getImageUrl"
 
 const competitions = [
   {
@@ -9,10 +10,10 @@ const competitions = [
     date: "15 ธันวาคม 2567",
     location: "สถาบัน Go Frame Academy",
     level: "ระดับชาติ",
-    image: "/competition1.jpg",
+    image: getImageUrl("competition1.jpg"),
     prize: "รางวัลรวม 100,000 บาท",
     participants: "200+ ผู้เข้าร่วม",
-    status: "สิ้นสุด"
+    status: "สิ้นสุด",
   },
   {
     id: 2,
@@ -20,10 +21,10 @@ const competitions = [
     date: "10 มกราคม 2568",
     location: "กรุงเทพมหานคร",
     level: "ระดับชาติ",
-    image: "/competition2.jpg",
+    image: getImageUrl("competition2.jpg"),
     prize: "รางวัลรวม 150,000 บาท",
     participants: "300+ ผู้เข้าร่วม",
-    status: "เร็วๆนี้"
+    status: "เร็วๆนี้",
   },
   {
     id: 3,
@@ -31,10 +32,10 @@ const competitions = [
     date: "15 มกราคม 2568",
     location: "เชียงใหม่",
     level: "ระดับภูมิภาค",
-    image: "/competition3.jpg",
+    image: getImageUrl("competition3.jpg"),
     prize: "รางวัลรวม 80,000 บาท",
     participants: "150+ ผู้เข้าร่วม",
-    status: "เร็วๆนี้"
+    status: "เร็วๆนี้",
   },
   {
     id: 4,
@@ -42,10 +43,10 @@ const competitions = [
     date: "1-15 มีนาคม 2568",
     location: "สถาบัน Go Frame Academy",
     level: "ระดับจังหวัด",
-    image: "/competition4.jpg",
+    image: getImageUrl("competition4.jpg"),
     prize: "โอกาสเรียนรู้ พบผู้เชี่ยวชาญ",
     participants: "100+ เยาวชน",
-    status: "เร็วๆนี้"
+    status: "เร็วๆนี้",
   },
   {
     id: 5,
@@ -53,10 +54,10 @@ const competitions = [
     date: "20 มีนาคม 2568",
     location: "นครปฐม",
     level: "ระดับภูมิภาค",
-    image: "/competition5.jpg",
+    image: getImageUrl("competition5.jpg"),
     prize: "รางวัลรวม 80,000 บาท",
     participants: "150+ ผู้เข้าร่วม",
-    status: "เร็วๆนี้"
+    status: "เร็วๆนี้",
   },
   {
     id: 6,
@@ -64,11 +65,11 @@ const competitions = [
     date: "10 เมษายน 2568",
     location: "สุราษฎร์ธานี",
     level: "ระดับภูมิภาค",
-    image: "/competition6.jpg",
+    image: getImageUrl("competition6.jpg"),
     prize: "รางวัลรวม 80,000 บาท",
     participants: "120+ ผู้เข้าร่วม",
-    status: "เร็วๆนี้"
-  }
+    status: "เร็วๆนี้",
+  },
 ]
 
 export function CompetitionsPage() {
@@ -79,7 +80,7 @@ export function CompetitionsPage() {
         <PageTemplate 
           title="งานแข่งหมากล้อม" 
           subtitle="ข้อมูลการแข่งขันหมากล้อมต่างๆทั่วประเทศและสิ่งที่คุณต้องรู้เพื่อเข้าร่วม" 
-          image="go_competition_pages.jpg" 
+          image={getImageUrl("go_competition_pages.jpg")}
           icons={[{ label: "แข่งขัน" }, { label: "ทั่วประเทศ" }]}
         >
           <div className="px-2">

@@ -20,11 +20,9 @@ import { CompetitionsPage } from "@/pages/CompetitionsPage"
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Go_Frame_web">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/shop" element={<ShopPage />} />
         <Route path="/articles" element={<KnowledgePage />} />
         <Route path="/articles/:slug" element={<ArticleDetailPage />} />
         <Route path="/knowledge" element={<KnowledgePage />} />
@@ -36,6 +34,8 @@ function App() {
         <Route path="/activities-news" element={<ActivitiesNewsPage />} />
         <Route path="/competitions" element={<CompetitionsPage />} />
         <Route path="/courses" element={<CoursesPage />} />
+        <Route path="/shop" element={<ShopPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/courses/:slug" element={<CourseDetailPage />} />
         <Route path="/comment-game" element={<CommentGamePage />} />
         <Route path="/qualify-dan" element={<QualifyDanPage />} />
@@ -47,4 +47,3 @@ function App() {
 }
 
 export default App
-
