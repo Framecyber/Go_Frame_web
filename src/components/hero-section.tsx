@@ -16,13 +16,13 @@ export function HeroSection() {
             ที่ปลูกฝังสติ สมดุล และปัญญา ผ่านหมากล้อมเพียงกระดานเดียว
           </h2>
           <div className="flex flex-wrap gap-3 pt-2">
-            <a href="/Go_Frame_web/contact">
+            <a href="/contact">
               <Button className="rounded-sm bg-[#516b5c] px-7 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#435545]">
                 สมัครเรียน
               </Button>
             </a>
             <a
-              href="/Go_Frame_web/courses"
+              href="/courses"
               className="rounded-sm border border-[#cfc5b8] bg-white px-7 py-3 text-base font-semibold text-[#3f3a32] hover:bg-[#e9e2d8] inline-flex items-center"
             >
               ดูหลักสูตร <span className="ml-1">→</span>
