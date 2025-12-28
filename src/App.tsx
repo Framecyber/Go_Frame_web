@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import { HomePage } from "@/pages/HomePage"
 import { ContactPage } from "@/pages/ContactPage"
 import { NewsPage } from "@/pages/NewsPage"
@@ -20,7 +20,6 @@ import { CompetitionsPage } from "@/pages/CompetitionsPage"
 
 function App() {
   return (
-    <Router basename="/Go_Frame_web">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/articles" element={<KnowledgePage />} />
@@ -42,7 +41,6 @@ function App() {
         <Route path="/verify-dan" element={<VerifyDanPage />} />
         <Route path="/dan-form" element={<DanFormPage />} />
       </Routes>
-    </Router>
   )
 }
 
